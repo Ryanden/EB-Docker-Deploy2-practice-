@@ -10,6 +10,7 @@ django-storages = "*"
 argparse = "*"
 "psycopg2-binary" = "*"
 pillow = "*"
+uwsgi = "*"
 
 [dev-packages]
 ipython = "*"

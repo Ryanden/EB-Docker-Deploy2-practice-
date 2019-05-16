@@ -1,6 +1,6 @@
 FROM            python:3.6.5-slim
 
-MAINTAINER      lockstom2@gmail.com
+MAINTAINER      lockstom3@gmail.com
 
 # uwsgi는 Pipfile에 기록
 RUN             apt -y update && apt -y dist-upgrade

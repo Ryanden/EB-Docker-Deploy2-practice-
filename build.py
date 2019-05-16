@@ -47,9 +47,23 @@ def mode_function(mode):
 
 def build_base():
     try:
+        # pipenv lock 으로 requirement.txt 생성
         subprocess.call('pipenv lock --requirements > requirements.txt', shell=True)
+        # Docker build
         subprocess.call('docker build -t eb-docker:base -f Dockerfile.base .', shell=True)
     finally:
+        # 끝난 후 requirements 삭제
+        os.remove('requirements.txt')
+
+
+def build_local():
+    try:
+        # pipenv lock 으로 requirements.txt 생성
+        subprocess.call('pipenv lock --requirements > requirements.txt', shell=True)
+        # docker build
+        subprocess.call('docker build -t eb-docker:local -f Dockerfile.local .', shell=True)
+    finally:
+        # 끝난 후 requirements.txt 파일 삭제
         os.remove('requirements.txt')
 
 

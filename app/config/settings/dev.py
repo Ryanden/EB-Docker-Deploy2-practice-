@@ -9,7 +9,7 @@ INSTALLED_APPS += [
     'django_extensions'
 ]
 
-DEFAULT_FILE_STRAGE = 'config.storages.S3DefaultStorage'
+DEFAULT_FILE_STORAGE = 'config.storages.S3DefaultStorage'
 
 AWS_STORAGE_BUCKET_NAME = secrets['AWS_STORAGE_BUCKET_NAME']
 

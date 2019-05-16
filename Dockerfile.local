@@ -1,5 +1,5 @@
 FROM            eb-docker:base
-MAINTAINER      lockstom2@gmail.com
+MAINTAINER      lockstom3@gmail.com
 
 ENV             PROJECT_DIR             /srv/project
 ENV             BUILD_MODE              local
